@@ -1,0 +1,72 @@
+% Mathematics 271 Document Created by Evan % Andrew Barker
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry} %set margins to 1 inch
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsthm}  % AMS theorem environments and proof environment -- load after amsmath
+\usepackage{latexsym}
+\usepackage{graphicx}    % standard LaTeX graphics tool
+\usepackage{xypic}      % commutative diagrams
+\usepackage[pdfstartview=FitH,pdfpagemode=UseNone]{hyperref} %hyper-reference sections, \ref and citations
+\usepackage{pbox}
+\usepackage{tikz} % for drawing technical %diagrams, graphing, etc.
+
+\usepackage{pgfplots}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{MATH 271}
+\rhead{Name: Evan Barker; UCID: 30146985}
+\chead{}
+%\lfoot{Author's Name}
+%\cfoot{}
+%\rfoot{Page \thepage}
+%%%%%%%%%%%%%%% ENVIRONMENTS
+\newtheorem{thm}{Theorem}[section]
+\newtheorem*{thm*}{Theorem}
+\newtheorem{lem}[thm]{Lemma}  %%%% [thm] means number in sequence with Theorem
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{prop}[thm]{Proposition}
+%%%%%%%%%%%% MACROS
+%% new commands 
+\newcommand{\ip}[2]{\langle #1 , #2 \rangle}    %this is to get the correct brackets for inner product
+\newcommand{\abs}[1]{\lvert#1\rvert}
+\newcommand\diag{\operatorname{diag}}   %%%%%%%%% diag matrix
+\newcommand\tr{\mbox{tr}\,}   %%%%%%%%% trace
+\newcommand\C{\mathbb C}    %%%%%%%%% the set of complex numbers
+\newcommand\R{\mathbb R}    %%%%%%%%% the set of real numbers
+\newcommand\Z{\mathbb Z}    %%%%%%%%% the set of integers
+\newcommand\N{\mathbb N}    %%%%%%%%% the natural numbers
+\newcommand\Q{\mathbb Q}    %%%%%%%% the rational numbers
+%% math operators
+\DeclareMathOperator{\ran}{Im} %% image
+\DeclareMathOperator{\aut}{Aut} %% automorphism
+\DeclareMathOperator{\spn}{span} %% span
+\DeclareMathOperator{\ann}{Ann} %% annihilator 
+\DeclareMathOperator{\rank}{rank} %% rank
+\DeclareMathOperator{\ch}{char}        %% characteristic
+\DeclareMathOperator{\ev}{\bf{ev}}    %% evaluation
+\DeclareMathOperator{\sgn}{sgn} %% sign
+\DeclareMathOperator{\id}{Id} %% identity
+\DeclareMathOperator{\supp}{Supp}%%%%%%%% support
+%%%%%%%%%%%%%% END MACROS
+%---BEGIN DOCUMENT----------
+% 
+\begin{document}
+\clearpage
+\begin{proof}
+Below is a simple direct-proof for mathematics 271, taught at the university of Calgary. \newline
+\begin{indent}
+Suppose we have,
+\end{indent}
+\begin{align}
+x\in\Z 
+\end{align}
+\begin{indent}
+And we intend to make the statement:If $x$ is an even integer, then $x^2$ is even. To first approach the proof for this mathematical statement, we will \emph{suppose} that $x$ is even \emph{and} that it belongs in the integer set. I.e., $x\in\Z$. Getting started with the proof, we can say there exists some $k\in\Z$ for which by the definition of an even integer, $x$ = $2k$. Since we have $x$ = $2k$, 23 can sub this into $x^2$ to get $x^2$ = $(2k)^2$ = $4k^2$ = $2(2k^2)$. Since we previously established that $k\in\Z$, then we have that $x^2$ is in fact even.
+\end{indent}
+
+\end{proof}
+
+\end{document}
